@@ -17,3 +17,9 @@ siBtn.addEventListener('click', function() {
     mensaje.innerHTML = `¡Muy buena elección tomada!<br>Usted ha tomado la decisión de "${eleccion}"`;
     mensaje.style.display = 'block';
 });
+
+sipBtn.addEventListener('click', function() {
+    const eleccion = sipBtn.textContent; // Obtener el texto del botón "Sí"
+    mensaje.innerHTML = `¡Muy buena elección tomada!<br>Usted ha tomado la decisión de "${eleccion}"`;
+    mensaje.style.display = 'block';
+});
