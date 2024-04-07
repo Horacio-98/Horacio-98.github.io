@@ -14,12 +14,12 @@ noBtn.addEventListener('mouseover', function() {
 
 siBtn.addEventListener('click', function() {
     const eleccion = siBtn.textContent; // Obtener el texto del botón "Sí"
-    mensaje.innerHTML = `¡Muy buena elección tomada!<br>Usted ha tomado la decisión de "${eleccion}"`;
+    mensaje.innerHTML = `¡Muy buena elección tomada! 😜<br>Ya tomaste la decisión de "${eleccion}"`;
     mensaje.style.display = 'block';
 });
 
 sipBtn.addEventListener('click', function() {
     const eleccion = sipBtn.textContent; // Obtener el texto del botón "Sí"
-    mensaje.innerHTML = `¡Muy buena elección tomada!<br>Usted ha tomado la decisión de "${eleccion}"`;
+    mensaje.innerHTML = `¡Muy buena elección tomada! 😜<br>Ya tomaste la decisión de "${eleccion}"`;
     mensaje.style.display = 'block';
 });
