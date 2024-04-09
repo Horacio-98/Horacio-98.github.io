@@ -1,7 +1,12 @@
 *{
-    background-image: url(background.png);
     letter-spacing: 2px;
     color: white;
+}
+
+body{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container{
@@ -11,7 +16,9 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    border: transparent;
 }
+
 
 .container__options{
     width: 100%;
@@ -34,11 +41,12 @@
     border-radius: 10px;
     color: white;
     padding: 10px;
+    background-color: transparent;
 }
 
 .mensaje-oculto {
     display: none;
-    font-size: 24px;
+    font-size: 26px;
     margin-top: 20px;
     text-align: center;
 }
@@ -47,4 +55,3 @@
 button:hover{
     border-bottom: 2px solid yellow;
 }
-
