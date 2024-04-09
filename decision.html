@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dec-style.css">
+    <title>Decision</title>
+</head>
+<body>
+    <div id="mensaje"></div>
+
+    <script>
+        window.onload = function() {
+            const parametros = new URLSearchParams(window.location.search);
+            const opcion = parametros.get('opcion');
+            const mensaje = document.getElementById('mensaje');
+
+            if (opcion === '1') {
+                mensaje.innerHTML = '¡Muy buena elección tomada! 😜<br>Ya tomaste la decisión de CAMPAMENTO (2 DIAS SOPORTANDOME) 🚗<br><br>📸 Favor de enviar foto 📸';
+            } else if (opcion === '2') {
+                mensaje.innerHTML = '¡Muy buena elección tomada! 😜<br>Ya tomaste la decisión de PICNIC (1 DIA SOPORTANDOME) 🥗<br><br>📸 Favor de enviar foto 📸';
+            }
+        }
+    </script>
+
+    <div class="container">
+        <div class="container__main">
+
+        </div>
+    </div>
+</body>
+</html>

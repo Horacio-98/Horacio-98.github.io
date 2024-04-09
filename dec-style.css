@@ -1,0 +1,36 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: transparent;
+    background-color: rgba(255, 192, 227, 0.61);
+}
+
+.container__main{
+    width: 700px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-image: url(love.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#mensaje {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(107, 12, 86);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
