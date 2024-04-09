@@ -11,15 +11,18 @@ noBtn.addEventListener('mouseover', function() {
 });
 
 
+function redireccionar(opcion) {
+    if (opcion === 'siBtn') {
+        window.location.href = 'decision.html?opcion=1';
+    } else if (opcion === 'sipBtn') {
+        window.location.href = 'decision.html?opcion=2';
+    }
+}
 
 siBtn.addEventListener('click', function() {
-    const eleccion = siBtn.textContent; // Obtener el texto del botón "Sí"
-    mensaje.innerHTML = `¡Muy buena elección tomada! 😜<br>Ya tomaste la decisión de "${eleccion}"<br><br>📸 Favor de enviar foto 📸`;
-    mensaje.style.display = 'block';
+    redireccionar(this.id);
 });
 
 sipBtn.addEventListener('click', function() {
-    const eleccion = sipBtn.textContent; // Obtener el texto del botón "Sí"
-    mensaje.innerHTML = `¡Muy buena elección tomada! 😜<br>Ya tomaste la decisión de "${eleccion}"<br><br>📸 Favor de enviar foto 📸`;
-    mensaje.style.display = 'block';
+    redireccionar(this.id);
 });
