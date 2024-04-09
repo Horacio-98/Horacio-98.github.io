@@ -41,7 +41,8 @@ body{
     border-radius: 10px;
     color: white;
     padding: 10px;
-    background-color: transparent;
+    background-color: transparent;, 
+    letter-spacing: 3px;
 }
 
 .mensaje-oculto {
